@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 const WHATSAPP_URL =
-  "https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1,%20vim%20pelo%20Instagram%20e%20quero%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20Norte%20One";
+  "https://wa.me/5566992204744?text=Ol%C3%A1,%20vim%20pelo%20Instagram%20e%20quero%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20Norte%20One";
 
 const socialLinks = [
   { label: "Instagram", icon: Instagram, href: "#" },
@@ -28,8 +28,8 @@ const cards = [
     title: "Sites profissionais que fazem sua empresa parecer maior.",
     kicker: "Presença digital premium",
     text: "Tenha uma vitrine moderna, rápida e pensada para transformar visitantes em clientes.",
-    cta: "Quero um site profissional",
-    href: WHATSAPP_URL,
+    cta: "Saiba mais",
+    href: "/sites-profissionais",
     image: "/images/sites-premium.png",
     icon: Globe2,
     bullets: ["Layout responsivo", "Copy de venda", "WhatsApp integrado"],
