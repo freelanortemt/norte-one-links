@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Bot,
   CheckCircle2,
+  Link2,
   Globe2,
   Instagram,
   Linkedin,
@@ -34,6 +35,16 @@ const cards = [
     image: `${BASE_PATH}/images/sites-premium.png`,
     icon: Globe2,
     bullets: ["Layout responsivo", "Copy de venda", "WhatsApp integrado"],
+  },
+  {
+    title: "Link para bio que transforma seu Instagram em vitrine profissional.",
+    kicker: "Um link, infinitas possibilidades",
+    text: "Organize serviços, WhatsApp, agenda, localização, portfólio e redes sociais em uma página elegante feita para facilitar contatos.",
+    cta: "Quero meu link para bio",
+    href: WHATSAPP_URL,
+    image: `${BASE_PATH}/images/link-para-bio-premium.png`,
+    icon: Link2,
+    bullets: ["Mais autoridade", "Mais praticidade", "Mais oportunidades"],
   },
   {
     title: "Cartão NFC inteligente para conexões de alto valor.",
@@ -104,8 +115,8 @@ export default function Home() {
               Tecnologia premium para sua empresa vender mais e parecer maior.
             </h1>
             <p className="mx-auto mt-4 max-w-[23rem] text-pretty text-sm leading-6 text-graphite/78">
-              Sites, cartões NFC, chatbots e aplicativos criados para posicionar
-              sua marca acima da concorrência.
+              Sites, links para bio, cartões NFC, chatbots e aplicativos criados
+              para posicionar sua marca acima da concorrência.
             </p>
 
             <div className="mt-7 flex items-center justify-center gap-5">
