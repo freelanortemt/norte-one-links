@@ -24,6 +24,7 @@ import {
 
 const WHATSAPP_URL =
   "https://wa.me/5566992204744?text=Ol%C3%A1,%20vim%20pelo%20Instagram%20e%20quero%20um%20site%20profissional%20para%20minha%20empresa";
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const benefits = [
   {
@@ -135,7 +136,7 @@ export default function SitesProfissionaisPage() {
             <div className="mt-7 overflow-hidden rounded-[2rem] border border-white/80 bg-white/55 p-3 shadow-premium backdrop-blur-xl">
               <div className="relative min-h-[260px] overflow-hidden rounded-[1.45rem] bg-softblack">
                 <Image
-                  src="/images/sites-premium.png"
+                  src={`${BASE_PATH}/images/sites-premium.png`}
                   alt="Mockup de site profissional em notebook e celular"
                   fill
                   priority

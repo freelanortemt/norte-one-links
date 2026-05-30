@@ -15,6 +15,7 @@ import {
 
 const WHATSAPP_URL =
   "https://wa.me/5566992204744?text=Ol%C3%A1,%20vim%20pelo%20Instagram%20e%20quero%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20Norte%20One";
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const socialLinks = [
   { label: "Instagram", icon: Instagram, href: "#" },
@@ -29,8 +30,8 @@ const cards = [
     kicker: "Presença digital premium",
     text: "Tenha uma vitrine moderna, rápida e pensada para transformar visitantes em clientes.",
     cta: "Saiba mais",
-    href: "/sites-profissionais",
-    image: "/images/sites-premium.png",
+    href: `${BASE_PATH}/sites-profissionais`,
+    image: `${BASE_PATH}/images/sites-premium.png`,
     icon: Globe2,
     bullets: ["Layout responsivo", "Copy de venda", "WhatsApp integrado"],
   },
@@ -40,7 +41,7 @@ const cards = [
     text: "Compartilhe WhatsApp, Instagram, site, localização e portfólio com apenas um toque.",
     cta: "Quero meu cartão NFC",
     href: WHATSAPP_URL,
-    image: "/images/nfc-premium.png",
+    image: `${BASE_PATH}/images/nfc-premium.png`,
     icon: Wifi,
     bullets: ["Link personalizado", "Design premium", "Dados atualizáveis"],
   },
@@ -50,7 +51,7 @@ const cards = [
     text: "Capture contatos, responda dúvidas e organize oportunidades sem perder velocidade.",
     cta: "Automatizar meu WhatsApp",
     href: WHATSAPP_URL,
-    image: "/images/chatbot-premium.png",
+    image: `${BASE_PATH}/images/chatbot-premium.png`,
     icon: Bot,
     bullets: ["Leads 24 horas", "Respostas rápidas", "Mais vendas"],
   },
@@ -60,7 +61,7 @@ const cards = [
     text: "Apps para negócios locais, agendamentos, delivery, comunidades e operações digitais.",
     cta: "Tenho uma ideia de app",
     href: WHATSAPP_URL,
-    image: "/images/apps-premium.png",
+    image: `${BASE_PATH}/images/apps-premium.png`,
     icon: Smartphone,
     bullets: ["UX premium", "Área administrativa", "Pronto para crescer"],
   },
@@ -87,7 +88,7 @@ export default function Home() {
               aria-label="Norte One"
             >
               <Image
-                src="/images/norte-one-logo.png"
+                src={`${BASE_PATH}/images/norte-one-logo-pages.png`}
                 alt="Norte One"
                 width={160}
                 height={160}
