@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Float, Line, PerspectiveCamera } from "@react-three/drei";
+import { PerspectiveCamera } from "@react-three/drei";
 import { motion, useReducedMotion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -477,33 +477,6 @@ function ParticleField() {
           depthWrite={false}
         />
       </points>
-      <Float speed={1.05} rotationIntensity={0.16} floatIntensity={0.35}>
-        <mesh position={[1.35, 0.7, -1.2]} rotation={[0.6, 0.35, 0.35]}>
-          <torusKnotGeometry args={[0.68, 0.08, 120, 14]} />
-          <meshStandardMaterial
-            color="#B87945"
-            emissive="#B87945"
-            emissiveIntensity={0.18}
-            metalness={0.72}
-            roughness={0.34}
-            transparent
-            opacity={0.62}
-          />
-        </mesh>
-      </Float>
-      <Line
-        points={[
-          [-4, -2.7, -2],
-          [-1.8, -1.35, -1.5],
-          [0.2, -1.95, -1.7],
-          [2.8, -0.9, -2.2],
-          [4, -1.7, -2],
-        ]}
-        color="#B87945"
-        transparent
-        opacity={0.35}
-        lineWidth={1}
-      />
       <gridHelper args={[12, 24, "#B87945", "#D8E1E8"]} position={[0, -3, -2]} />
     </group>
   );
