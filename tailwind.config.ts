@@ -21,9 +21,9 @@ const config: Config = {
         softblack: "#0B1F33",
       },
       boxShadow: {
-        premium: "0 32px 100px rgba(11, 31, 51, 0.16)",
-        glass: "0 18px 60px rgba(11, 31, 51, 0.10)",
-        copper: "0 24px 80px rgba(184, 121, 69, 0.18)",
+        premium: "0 24px 80px rgba(11, 31, 51, 0.18)",
+        glass: "0 18px 50px rgba(11, 31, 51, 0.12)",
+        copper: "0 24px 70px rgba(184, 121, 69, 0.22)",
       },
     },
   },

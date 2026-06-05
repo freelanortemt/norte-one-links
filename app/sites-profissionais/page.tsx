@@ -19,8 +19,8 @@ import {
   Sparkles,
   Target,
   WandSparkles,
-  type LucideIcon,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 const WHATSAPP_URL =
   "https://wa.me/5566992204744?text=Ol%C3%A1,%20vim%20pelo%20Instagram%20e%20quero%20um%20site%20profissional%20para%20minha%20empresa";

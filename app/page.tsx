@@ -1,5 +1,5 @@
-import NorteOneLanding from "../components/NorteOneLanding";
+import NorteOneBioLinks from "../components/NorteOneBioLinks";
 
 export default function Home() {
-  return <NorteOneLanding />;
+  return <NorteOneBioLinks />;
 }

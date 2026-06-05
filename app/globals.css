@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --azul-norte: #0B1F33;
-  --off-white: #F4F1EA;
-  --grafite: #20242A;
-  --cobre: #B87945;
-  --azul-nevoa: #D8E1E8;
-  --cinza-pedra: #8A8F98;
+  --azul-norte: #0b1f33;
+  --off-white: #f4f1ea;
+  --grafite: #20242a;
+  --cobre: #b87945;
+  --azul-nevoa: #d8e1e8;
+  --cinza-pedra: #8a8f98;
   color: var(--grafite);
-  background: var(--off-white);
+  background: var(--azul-norte);
   font-synthesis: none;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +19,6 @@
 
 html {
   scroll-behavior: smooth;
-  background: var(--azul-norte);
 }
 
 body {
@@ -28,7 +27,6 @@ body {
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   background: var(--azul-norte);
-  overflow-x: hidden;
 }
 
 ::selection {
@@ -36,13 +34,9 @@ body {
   background: var(--cobre);
 }
 
-a,
-button {
-  -webkit-tap-highlight-color: transparent;
-}
-
 .noise-layer {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
 }
 
 .text-balance {
@@ -69,10 +63,10 @@ button {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
 

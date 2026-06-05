@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Norte One | Tecnologia, IA e presença digital premium",
+  title: "Norte One | Links oficiais",
   description:
-    "Sites premium, automações com IA, chatbots, sistemas e posicionamento digital para empresas que querem ser percebidas com mais valor.",
+    "Links oficiais da Norte One para site principal, chatbots, automações, sites premium, aplicativos, CRM e páginas profissionais para bio do Instagram.",
 };
 
 export const viewport: Viewport = {
