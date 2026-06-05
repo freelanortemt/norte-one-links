@@ -47,9 +47,7 @@ const bioLinks = [
     eyebrow: "IA aplicada",
     description:
       "Atendimento automático para responder, qualificar contatos e reduzir oportunidades perdidas.",
-    href: makeWhatsappLink(
-      "Olá, vim pelo Instagram da Norte One e quero saber sobre chatbot e automação para WhatsApp.",
-    ),
+    href: `${BASE_PATH}/chatbot-whatsapp`,
     image: `${BASE_PATH}/images/chatbot-premium.png`,
     icon: Bot,
     action: "Automatizar atendimento",
@@ -60,9 +58,7 @@ const bioLinks = [
     eyebrow: "A partir de R$ 59,90",
     description:
       "Uma página organizada, elegante e estratégica para reunir todos os links importantes do seu negócio.",
-    href: makeWhatsappLink(
-      "Olá, vim pelo Instagram da Norte One e quero criar meu link para bio profissional a partir de R$ 59,90.",
-    ),
+    href: `${BASE_PATH}/link-para-bio`,
     image: `${BASE_PATH}/images/link-para-bio-premium.png`,
     icon: Layers3,
     action: "Quero meu link",
@@ -84,9 +80,7 @@ const bioLinks = [
     eyebrow: "Sob demanda",
     description:
       "Estruturas digitais para organizar operações, clientes, agendamentos, vendas e processos internos.",
-    href: makeWhatsappLink(
-      "Olá, vim pelo Instagram da Norte One e quero conversar sobre aplicativo, CRM ou sistema web.",
-    ),
+    href: `${BASE_PATH}/aplicativos-crm`,
     image: `${BASE_PATH}/images/apps-premium.png`,
     icon: PanelTop,
     action: "Planejar projeto",
@@ -109,9 +103,7 @@ const quickActions = [
   },
   {
     label: "Apps e CRM",
-    href: makeWhatsappLink(
-      "Olá, quero saber sobre aplicativos, CRM e sistemas da Norte One.",
-    ),
+    href: `${BASE_PATH}/aplicativos-crm`,
     icon: Smartphone,
   },
 ];
