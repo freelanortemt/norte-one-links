@@ -25,7 +25,7 @@ import type { Group, Points } from "three";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const WHATSAPP_BASE = "https://wa.me/5566992204744";
-const MAIN_SITE_URL = "https://norteone.com.br";
+const MAIN_SITE_URL = "https://site-norte-one.vercel.app";
 
 const makeWhatsappLink = (message: string) =>
   `${WHATSAPP_BASE}?text=${encodeURIComponent(message)}`;
@@ -215,16 +215,16 @@ function SmoothScroll({ children }: { children: React.ReactNode }) {
 
 function HeroIntro() {
   return (
-    <motion.header
-      initial="hidden"
-      animate="show"
-      transition={{ staggerChildren: 0.1 }}
-      className="pt-2 text-center"
-    >
-      <motion.div variants={entrance} className="mx-auto w-fit">
-        <div className="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-cobre/30 bg-offwhite shadow-copper backdrop-blur-xl">
+    <header className="pt-2 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 22, filter: "blur(10px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
+        className="mx-auto w-fit"
+      >
+        <div className="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-cobre/35 bg-norte shadow-copper backdrop-blur-xl">
           <Image
-            src={`${BASE_PATH}/images/norte-one-logo-pages.png`}
+            src={`${BASE_PATH}/images/norte-one-logo-bio.png`}
             alt="Logo Norte One"
             fill
             priority
@@ -235,21 +235,27 @@ function HeroIntro() {
       </motion.div>
 
       <motion.p
-        variants={entrance}
+        initial={{ opacity: 0, y: 18, filter: "blur(8px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ delay: 0.08, duration: 0.72, ease: [0.2, 0.8, 0.2, 1] }}
         className="mt-5 text-xs font-black uppercase tracking-[0.24em] text-cobre"
       >
         Tecnologia • Design • Estratégia
       </motion.p>
 
       <motion.h1
-        variants={entrance}
+        initial={{ opacity: 0, y: 22, filter: "blur(10px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ delay: 0.16, duration: 0.78, ease: [0.2, 0.8, 0.2, 1] }}
         className="mx-auto mt-4 max-w-[11ch] text-balance text-[clamp(2.9rem,12vw,4.9rem)] font-semibold leading-[0.88] tracking-[-0.05em]"
       >
         Norte One
       </motion.h1>
 
       <motion.p
-        variants={entrance}
+        initial={{ opacity: 0, y: 18, filter: "blur(8px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ delay: 0.24, duration: 0.72, ease: [0.2, 0.8, 0.2, 1] }}
         className="mx-auto mt-5 max-w-md text-pretty text-base leading-7 text-nevoa/78"
       >
         Links oficiais para contratar presença digital premium, automações,
@@ -257,13 +263,15 @@ function HeroIntro() {
       </motion.p>
 
       <motion.div
-        variants={entrance}
+        initial={{ opacity: 0, y: 16, filter: "blur(8px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ delay: 0.32, duration: 0.7, ease: [0.2, 0.8, 0.2, 1] }}
         className="mx-auto mt-6 inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.07] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-nevoa/72 backdrop-blur-2xl"
       >
         <span className="h-2 w-2 rounded-full bg-cobre shadow-[0_0_24px_rgba(184,121,69,.9)]" />
         Sinop MT e região
       </motion.div>
-    </motion.header>
+    </header>
   );
 }
 
@@ -294,14 +302,14 @@ function QuickActions() {
 
 function LinkStack() {
   return (
-    <section id="links" className="mt-5 grid gap-4">
+    <section id="links" className="mt-5 grid gap-3.5">
       {bioLinks.map((item, index) => (
         <a
           key={item.title}
           href={item.href}
           data-depth-reveal
-          className={`group relative isolate overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.08] shadow-[0_24px_90px_rgba(0,0,0,.22)] backdrop-blur-2xl transition duration-500 hover:-translate-y-1.5 hover:border-cobre/45 hover:bg-white/[0.115] ${
-            item.size === "featured" ? "min-h-[290px]" : "min-h-[250px]"
+          className={`group relative isolate overflow-hidden rounded-[1.55rem] border border-white/12 bg-white/[0.08] shadow-[0_20px_70px_rgba(0,0,0,.18)] backdrop-blur-2xl transition duration-500 hover:-translate-y-1 hover:border-cobre/45 hover:bg-white/[0.115] ${
+            item.size === "featured" ? "min-h-[226px]" : "min-h-[198px]"
           }`}
         >
           <div className="absolute inset-0">
@@ -319,30 +327,30 @@ function LinkStack() {
 
           <div
             data-parallax="-8"
-            className="absolute right-5 top-5 grid h-14 w-14 place-items-center rounded-2xl border border-white/16 bg-white/12 text-cobre shadow-glass backdrop-blur-2xl"
+            className="absolute right-4 top-4 grid h-11 w-11 place-items-center rounded-[1rem] border border-white/16 bg-white/12 text-cobre shadow-glass backdrop-blur-2xl"
           >
-            <item.icon size={25} />
+            <item.icon size={21} />
           </div>
 
-          <div className="relative z-10 flex min-h-[inherit] flex-col justify-end p-5">
-            <div className="mb-3 flex flex-wrap items-center gap-2">
-              <span className="rounded-full border border-cobre/35 bg-cobre/18 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-cobre">
+          <div className="relative z-10 flex min-h-[inherit] flex-col justify-end p-4">
+            <div className="mb-2.5 flex flex-wrap items-center gap-1.5">
+              <span className="rounded-full border border-cobre/35 bg-cobre/18 px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.16em] text-cobre">
                 {item.eyebrow}
               </span>
               {item.size === "featured" ? (
-                <span className="rounded-full border border-white/14 bg-offwhite px-3 py-1 text-[10px] font-black uppercase tracking-[0.16em] text-norte">
+                <span className="rounded-full border border-white/14 bg-offwhite px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.14em] text-norte">
                   Oferta bio
                 </span>
               ) : null}
             </div>
 
-            <h2 className="max-w-[11ch] text-balance text-[clamp(2rem,8vw,3rem)] font-semibold leading-[0.95] tracking-[-0.04em] text-offwhite">
+            <h2 className="max-w-[14ch] text-balance text-[clamp(1.55rem,6.4vw,2.25rem)] font-semibold leading-[0.96] tracking-[-0.035em] text-offwhite">
               {item.title}
             </h2>
-            <p className="mt-4 max-w-[31rem] text-sm leading-6 text-nevoa/78">
+            <p className="mt-2.5 max-w-[31rem] text-[13px] leading-5 text-nevoa/78">
               {item.description}
             </p>
-            <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-offwhite px-4 py-3 text-xs font-black uppercase tracking-[0.14em] text-norte transition group-hover:bg-nevoa">
+            <span className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-offwhite px-3.5 py-2.5 text-[10px] font-black uppercase tracking-[0.12em] text-norte transition group-hover:bg-nevoa">
               {item.action}
               {item.title === "Site principal" ? (
                 <ExternalLink size={15} />
