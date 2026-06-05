@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { ElementType } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -20,6 +19,7 @@ import {
   Sparkles,
   Target,
   WandSparkles,
+  type LucideIcon,
 } from "lucide-react";
 
 const WHATSAPP_URL =
@@ -145,7 +145,7 @@ export default function SitesProfissionaisPage() {
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0)_25%,rgba(17,17,17,0.88)_100%)]" />
                 <div className="absolute bottom-4 left-4 right-4 text-premium">
-                  <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#E5C073]">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#B87945]">
                     Sites Norte One
                   </p>
                   <h1 className="mt-3 text-4xl font-semibold leading-[0.98] tracking-normal">
@@ -163,7 +163,7 @@ export default function SitesProfissionaisPage() {
 
             <a
               href={WHATSAPP_URL}
-              className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-softblack px-6 text-sm font-bold text-premium shadow-premium ring-1 ring-[#C9983B]/35 transition hover:bg-graphite"
+              className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-softblack px-6 text-sm font-bold text-premium shadow-premium ring-1 ring-[#B87945]/35 transition hover:bg-graphite"
             >
               Quero meu site profissional
               <ArrowRight size={16} />
@@ -177,7 +177,7 @@ export default function SitesProfissionaisPage() {
               key={benefit.title}
               className="rounded-[1.6rem] border border-white/75 bg-white/62 p-5 shadow-glass backdrop-blur-xl"
             >
-              <benefit.icon className="mb-4 text-[#A8792F]" size={24} />
+              <benefit.icon className="mb-4 text-[#B87945]" size={24} />
               <h2 className="text-xl font-semibold leading-tight tracking-normal">
                 {benefit.title}
               </h2>
@@ -190,7 +190,7 @@ export default function SitesProfissionaisPage() {
 
         <section className="px-4 pb-5">
           <div className="rounded-[2rem] bg-[linear-gradient(145deg,#2B2B31,#111111)] p-5 text-premium shadow-premium">
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#D4A148]/80">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#B87945]/80">
               O que está incluso
             </p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight tracking-normal">
@@ -214,7 +214,7 @@ export default function SitesProfissionaisPage() {
         <section className="px-4 pb-5">
           <div className="rounded-[2rem] border border-white/75 bg-white/62 p-5 shadow-premium backdrop-blur-xl">
             <div className="flex items-center gap-3">
-              <span className="grid h-11 w-11 place-items-center rounded-2xl bg-softblack text-[#D4A148]">
+              <span className="grid h-11 w-11 place-items-center rounded-2xl bg-softblack text-[#B87945]">
                 <Target size={20} />
               </span>
               <div>
@@ -266,7 +266,7 @@ export default function SitesProfissionaisPage() {
                     </div>
                   </div>
                   <div className="p-4">
-                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#A8792F]">
+                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#B87945]">
                       {project.name}
                     </p>
                     <h3 className="mt-2 text-xl font-semibold leading-tight">
@@ -287,7 +287,7 @@ export default function SitesProfissionaisPage() {
 
         <section className="px-4 pb-5">
           <div className="rounded-[2rem] bg-[linear-gradient(145deg,#2B2B31,#111111)] p-5 text-premium shadow-premium">
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#D4A148]/80">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#B87945]/80">
               Sites para qualquer segmento
             </p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight tracking-normal">
@@ -303,7 +303,7 @@ export default function SitesProfissionaisPage() {
                   key={niche.title}
                   className="reveal rounded-[1.35rem] border border-white/10 bg-white/8 p-4 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:bg-white/12"
                 >
-                  <niche.icon className="mb-4 text-[#D4A148]" size={22} />
+                  <niche.icon className="mb-4 text-[#B87945]" size={22} />
                   <h3 className="text-lg font-semibold leading-tight">
                     {niche.title}
                   </h3>
@@ -318,7 +318,7 @@ export default function SitesProfissionaisPage() {
 
         <section className="px-4 pb-5">
           <div className="rounded-[2rem] border border-white/75 bg-white/62 p-5 shadow-premium backdrop-blur-xl">
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#A8792F]">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#B87945]">
               Como o site vende por você
             </p>
             <div className="mt-5 grid gap-3">
@@ -363,8 +363,8 @@ export default function SitesProfissionaisPage() {
 
         <section className="px-4 pb-8">
           <div className="relative overflow-hidden rounded-[2rem] bg-softblack p-6 text-premium shadow-premium">
-            <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full border border-[#D4A148]/25" />
-            <Sparkles className="text-[#D4A148]" size={24} />
+            <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full border border-[#B87945]/25" />
+            <Sparkles className="text-[#B87945]" size={24} />
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal">
               Se sua empresa ainda não tem um site, ela pode estar perdendo
               clientes em silêncio.
@@ -375,7 +375,7 @@ export default function SitesProfissionaisPage() {
             </p>
             <a
               href={WHATSAPP_URL}
-              className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-premium px-6 text-sm font-bold text-softblack ring-1 ring-[#D4A148]/40 transition hover:bg-white"
+              className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-premium px-6 text-sm font-bold text-softblack ring-1 ring-[#B87945]/40 transition hover:bg-white"
             >
               Fazer meu orçamento
               <MessageCircle size={17} />
@@ -398,7 +398,7 @@ function ProcessStep({
 }) {
   return (
     <div className="reveal rounded-[1.35rem] border border-softblack/8 bg-premium/82 p-4 shadow-glass transition duration-500 hover:-translate-y-1">
-      <span className="text-xs font-black uppercase tracking-[0.2em] text-[#A8792F]">
+      <span className="text-xs font-black uppercase tracking-[0.2em] text-[#B87945]">
         {number}
       </span>
       <h3 className="mt-3 text-xl font-semibold leading-tight">{title}</h3>
@@ -412,13 +412,13 @@ function OfferItem({
   title,
   text,
 }: {
-  icon: ElementType;
+  icon: LucideIcon;
   title: string;
   text: string;
 }) {
   return (
     <div className="rounded-[1.6rem] border border-white/75 bg-white/62 p-5 shadow-glass backdrop-blur-xl">
-      <Icon className="mb-4 text-[#A8792F]" size={24} />
+      <Icon className="mb-4 text-[#B87945]" size={24} />
       <h2 className="text-2xl font-semibold leading-tight tracking-normal">
         {title}
       </h2>

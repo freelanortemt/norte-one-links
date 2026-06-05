@@ -2,13 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Norte One | Tecnologia premium para vender mais",
+  title: "Norte One | Tecnologia, IA e presença digital premium",
   description:
-    "Sites profissionais, cartões NFC, chatbots para WhatsApp e aplicativos sob demanda para empresas que querem vender mais.",
+    "Sites premium, automações com IA, chatbots, sistemas e posicionamento digital para empresas que querem ser percebidas com mais valor.",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#F6F5F2",
+  themeColor: "#0B1F33",
   width: "device-width",
   initialScale: 1,
 };
