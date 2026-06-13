@@ -232,7 +232,7 @@ function HeroIntro() {
         transition={{ delay: 0.08, duration: 0.72, ease: [0.2, 0.8, 0.2, 1] }}
         className="mt-5 text-xs font-black uppercase tracking-[0.24em] text-cobre"
       >
-        Tecnologia • Design • Estratégia
+        Tecnologia • Automação • Crescimento
       </motion.p>
 
       <motion.h1
@@ -250,8 +250,8 @@ function HeroIntro() {
         transition={{ delay: 0.24, duration: 0.72, ease: [0.2, 0.8, 0.2, 1] }}
         className="mx-auto mt-5 max-w-md text-pretty text-base leading-7 text-nevoa/78"
       >
-        Links oficiais para contratar presença digital premium, automações,
-        sites, aplicativos e páginas profissionais para bio do Instagram.
+        Presença digital premium, automações, sites, sistemas empresariais,
+        aplicativos e tudo que sua empresa precisa para crescer.
       </motion.p>
 
       <motion.div
